@@ -49,6 +49,8 @@ Start reading [Hello World](https://reactjs.org/docs/hello-world.html) documenta
 
 # MAIN CONCEPTS
 
+> Timeline: (Reading) 2 weeks
+
 Step by step learning the main concepts. For any examples you found in the documentation, you can try it in your first React app created above.
 
 While reading Main Concepts, you can also do hands-on practice at the same time.
@@ -61,11 +63,13 @@ While reading Main Concepts, you can also do hands-on practice at the same time.
 - [Conditional Rendering](https://reactjs.org/docs/conditional-rendering.html)
 - [Lists and Keys](https://reactjs.org/docs/lists-and-keys.html)
 - [Forms](https://reactjs.org/docs/forms.html)
-- [Lifting State Up](https://reactjs.org/docs/lifting-state-up.html)
-- [Composition vs Inheritance](https://reactjs.org/docs/composition-vs-inheritance.html)
-- [Thinking in React](https://reactjs.org/docs/thinking-in-react.html)
+- [Lifting State Up](https://reactjs.org/docs/lifting-state-up.html) *
+- [Composition vs Inheritance](https://reactjs.org/docs/composition-vs-inheritance.html) *
+- [Thinking in React](https://reactjs.org/docs/thinking-in-react.html) *
 
 ## STORYBOOK
+
+> Reading while doing practice
 
 [Storybook](https://storybook.js.org/) is an open source tool for building UI components and pages in isolation. It streamlines UI development, testing and documentation.
 
@@ -82,13 +86,15 @@ pnpm storybook
 
 Try to create a Storybook for your example components. https://storybook.js.org/tutorials/intro-to-storybook/react/en/simple-component/
 
-## PRACTICE
+## PRACTICE 01
 
 Apply what you have read to rewrite your previous HTML/CSS practice into React components.
 
 - Apply Storybook into your practice.
 
 # REACT HOOKS
+
+> Timeline: 2 weeks
 
 Hooks let you use state and other React features without writing a class.
 
@@ -106,7 +112,7 @@ Hooks let you use state and other React features without writing a class.
 - Debug tools: [React DevTools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi). Supporters have to present how this tool works.
 - Install the extension and use it to debug your practices.
 
-## PRACTICE
+## PRACTICE 02
 
 This practice will let you understand about simple flow in React:
 
@@ -119,6 +125,8 @@ This practice will let you understand about simple flow in React:
 At the end of this step, trainees should be able to join projects for hot training and doing React Components.
 
 # ADVANCED GUIDES
+
+> Timeline: 2-3 weeks
 
 All the topics in the [Advanced Guides](https://reactjs.org/docs/accessibility.html#:~:text=MAIN%20CONCEPTS-,ADVANCED%20GUIDES,-Accessibility) need to be read. Some highlight topics need more focus:
 
@@ -143,6 +151,8 @@ All the topics in the [Advanced Guides](https://reactjs.org/docs/accessibility.h
 
 ## UNIT TESTING
 
+> Timeline: 1 weeks
+
 Supporters should give a brief introduction for unit testing and how to set it up.
 
 - [Testing Overview](https://reactjs.org/docs/testing.html)
@@ -152,7 +162,7 @@ Supporters should give a brief introduction for unit testing and how to set it u
 - [Testing Recipes](https://reactjs.org/docs/testing-recipes.html)
 - [Testing environments](https://reactjs.org/docs/testing-environments.html)
 
-## PRACTICE
+## BIG PRACTICE
 
 - Adding more features for practice 2
     - User adds & deletes a product
