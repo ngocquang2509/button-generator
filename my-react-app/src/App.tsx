@@ -4,6 +4,7 @@ import HoverImage2 from "./Advance/HOC/Image2";
 import NewForm from "./Advance/Profiler/NewForm";
 import { profilerCallback } from "./Advance/Profiler/profilerCallback";
 import "./App.css";
+import { Effect } from "./Hooks/useEffect";
 import { Greeting } from "./Main Concepts/Conditional Rendering";
 
 function App() {
@@ -12,9 +13,7 @@ function App() {
       <Greeting isLoggedIn={true} />
       <HoverImage1 />
       <HoverImage2 />
-      <Profiler id="NewForm" onRender={profilerCallback}>
-        <NewForm />
-      </Profiler>
+      <Effect />
     </div>
   );
 }
