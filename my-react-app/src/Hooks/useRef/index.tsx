@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const ButtonRef = () => {
   let ref = useRef(0);
@@ -14,3 +14,34 @@ const ButtonRef = () => {
 };
 
 export default ButtonRef;
+
+export const StopWatch = () => {
+  const timeRef = useRef(0);
+  const [count, setCount] = useState(0);
+
+  const startCount = () => {
+    if (timeRef.current) {
+      return;
+    }
+    timeRef.current = setInterval(() => setCount((count) => count + 1), 1000);
+  };
+
+  const stopCount = () => {
+    clearInterval(timeRef.current);
+    timeRef.current = 0;
+  };
+
+  useEffect(() => {
+    return () => clearInterval(timeRef.current);
+  }, []);
+
+  return (
+    <>
+      <div>Time: {count} s</div>
+      <div>
+        <button onClick={startCount}>Start</button>
+        <button onClick={stopCount}>Stop</button>
+      </div>
+    </>
+  );
+};
