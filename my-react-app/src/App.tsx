@@ -5,15 +5,14 @@ import NewForm from "./Advance/Profiler/NewForm";
 import { profilerCallback } from "./Advance/Profiler/profilerCallback";
 import "./App.css";
 import { Effect } from "./Hooks/useEffect";
+import CounterReducer from "./Hooks/useReducer";
 import { Greeting } from "./Main Concepts/Conditional Rendering";
 
 function App() {
   return (
     <div className="App">
       <Greeting isLoggedIn={true} />
-      <HoverImage1 />
-      <HoverImage2 />
-      <Effect />
+      <CounterReducer />
     </div>
   );
 }
