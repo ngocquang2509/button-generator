@@ -1,23 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import App from './App';
+import { createBrowserRouter, createRoutesFromElements, Outlet, Route, RouterProvider } from 'react-router-dom';
 import './index.css';
+import Sidebar from './layouts/Sidebar';
 import Collection from './router/collection';
-import ErrorPage from './router/error';
 import Root from './router/root';
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <Root />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: 'collection/',
-    element: <Collection />,
-  },
-]);
+const AppLayout = () => {
+  return (
+    <div className='flex'>
+      <Sidebar />
+      <Outlet />
+    </div>
+  );
+};
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route element={<AppLayout />}>
+      <Route path='/' element={<Root />} />
+      <Route path='collection' element={<Collection />} />
+    </Route>,
+  ),
+);
+
 
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
